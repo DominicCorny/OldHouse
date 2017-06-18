@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 <body>
 
@@ -14,7 +15,7 @@
 </ul>
 <style>
 li a {
-    font-size: 250%;
+    font-size: 200%;
     padding: 12px 12px;
     background-color: #eee;
     color: black;
@@ -23,7 +24,7 @@ li a {
 
 }
 b {
-    font-size: 280%;
+    font-size: 250%;
     padding: 12px 12px;
     background-color: #cccccc;
     color: black;
@@ -37,6 +38,18 @@ ul {
     padding: 0;
     width: 400px;
 }
+@media only screen and (max-width: 768px){
+    ul{
+        width: 100%;
+    }
+    li a{
+        text-align: center;
+    }
+    b{
+        text-align: center;
+    }
+}
+
 li a:hover {
     background-color: #ccc;
 }

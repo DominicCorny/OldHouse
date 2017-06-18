@@ -1,33 +1,58 @@
-ul {
+#navigation{
+    background-color: #f1f1f1;
+    font-size: 200%;
+    text-align: center;
+
+}
+#navigation ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #f1f1f1;
     overflow: hidden;
 }
-li {
-    float: left;
+#navigation li {
     padding: 0px 0px;
     width: auto;
 }
-li a {
-    display: block;
-    color: #000;
+#navigation .navElement {
+    display: none;
     padding: 8px 12px;
     text-decoration: none;
-    font-size: 170%;
+    color: #000;
+}
+#navigation .menuElement {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #000;
+}
+@media only screen and (min-width: 768px) {
+    /* PC version */
+    #navigation li {
+        float: left;
+        padding: 0px 0px;
+        width: auto;
+    }
+    #navigation a.navElement {
+        display: block;
+    }
+    #navigation .menuElement {
+        display: none;
+    }
+}
+#navigation:hover .navElement{
+    display: block;
 }
 
-li a.active {
+#navigation #current {
     background-color: #0090ff;
     color: white;
 }
 
-li a:hover:not(.active) {
+#navigation li a:hover, .navElement:hover {
     background-color: #555;
     color: white;
 }
-
 img {
     width:100%;
     height:auto;
